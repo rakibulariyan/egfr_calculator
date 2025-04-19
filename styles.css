@@ -4,6 +4,7 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    padding-bottom: 50px; /* Added to prevent footer overlap */
 }
 
 header {
@@ -28,6 +29,7 @@ header {
     background: white;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
     right: 10px;
+    z-index: 1; /* Ensure dropdown appears above ads */
 }
 
 .dropdown-content a {
@@ -39,6 +41,24 @@ header {
 
 .dropdown-content.show {
     display: block;
+}
+
+/* Ad Container Styles */
+.ad-container {
+    margin: 15px auto;
+    padding: 10px 0;
+    width: 100%;
+    max-width: 728px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Top Ad Container */
+.ad-container:first-of-type {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 .container {
