@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eGFR Calculator - Rakibul Ariyan</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- AdMob SDK -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-app-pub-9706933622096205~4329600584"
+            crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -21,6 +24,19 @@
             </div>
         </div>
     </header>
+
+    <!-- Banner Ad at the top -->
+    <div class="ad-container">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client=ca-app-pub-9706933622096205~4329600584"
+             data-ad-slot="ca-app-pub-9706933622096205/6279217284"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
 
     <!-- Main Calculator Section -->
     <div class="container">
@@ -39,6 +55,19 @@
 
         <button onclick="calculateEGFR()">Calculate</button>
         <h3>eGFR Result: <span id="result">--</span> mL/min/1.73m²</h3>
+    </div>
+
+    <!-- Banner Ad at the bottom -->
+    <div class="ad-container">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-app-pub-9706933622096205~4329600584"
+             data-ad-slot="ca-app-pub-9706933622096205/6279217284"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </div>
 
     <!-- Footer -->
@@ -69,6 +98,9 @@
             }
 
             document.getElementById("result").innerText = egfr.toFixed(2);
+            
+            // Refresh ads after calculation
+            (adsbygoogle = window.adsbygoogle || []).push({});
         }
     </script>
 
